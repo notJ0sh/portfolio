@@ -4,6 +4,14 @@ body {
     background-color: #fcfcfc;
 }
 
+/* FIX: Scroll Spy / Detection Fix */
+/* This ensures that when you scroll UP, the browser recognizes the section 
+   earlier, even with the sticky navbar in the way. */
+section,
+header {
+    scroll-margin-top: 100px;
+}
+
 .hero-section {
     min-height: 80vh;
     background: #f8f9fa;
@@ -69,4 +77,23 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Styling the active link in the navbar */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+    font-weight: bold;
+    border-bottom: 2px solid #0d6efd;
+}
+
+/* Ensure smooth transition for the highlight */
+.nav-link {
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+/* Footer White Space Extension */
+#contact {
+    /* This adds the large blank space at the bottom you requested */
+    padding-bottom: 40vh !important;
 }

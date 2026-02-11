@@ -10,20 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="150">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#about">JOSHUA OOI</a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#contact">Contact</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header id="about" class="hero-section d-flex align-items-center">
+    <header id="about" class="hero-section d-flex align-items-center" style="min-height: 80vh; background: #f8f9fa;">
         <div class="container text-center">
             <h1 class="display-3 fw-bold fade-in">Hi, I'm Joshua.</h1>
             <p class="lead fade-in-delayed">I’m an IT student specializing in building user-facing web features and
@@ -42,7 +47,7 @@
                 <div class="card project-card-full shadow-sm border-0 overflow-hidden">
                     <div class="row g-0">
                         <div class="col-lg-6">
-                            <img src="assets/images/web-app.png" class="img-fluid h-100 w-100 object-fit-cover"
+                            <img src="Assets/images/web-app.png" class="img-fluid h-100 w-100 object-fit-cover"
                                 alt="Web App">
                         </div>
                         <div class="col-lg-6 p-4 d-flex flex-column justify-content-center">
@@ -62,9 +67,57 @@
             </div>
         </div>
 
+        <div class="row mb-5 fade-in">
+            <div class="col-12">
+                <div class="card project-card-full shadow-sm border-0 overflow-hidden">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <img src="Assets/images/discord-bot.png" class="img-fluid h-100 w-100 object-fit-cover"
+                                alt="Discord Bot">
+                        </div>
+                        <div class="col-lg-6 p-4 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold">Python Discord Bot</h3>
+                            <p class="text-muted mb-2"><strong>Role:</strong> Solo Developer</p>
+                            <p>Automation tool for community management. Leveraged APIs to handle asynchronous events
+                                and real-time data fetching for improved user engagement.</p>
+                            <div class="tag-container mt-auto pt-3">
+                                <span class="mini-tag">Python</span>
+                                <span class="mini-tag">Discord API</span>
+                                <span class="mini-tag">AsyncIO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 fade-in">
+            <div class="col-12">
+                <div class="card project-card-full shadow-sm border-0 overflow-hidden">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <img src="Assets/images/roblox-game.png" class="img-fluid h-100 w-100 object-fit-cover"
+                                alt="Roblox Game">
+                        </div>
+                        <div class="col-lg-6 p-4 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold">Roblox Scripting & UX</h3>
+                            <p class="text-muted mb-2"><strong>Role:</strong> Game Developer</p>
+                            <p>Engineered custom gameplay mechanics using Luau and designed scalable UI/UX systems.
+                                Optimized client-server communication to handle high player counts.</p>
+                            <div class="tag-container mt-auto pt-3">
+                                <span class="mini-tag">Luau</span>
+                                <span class="mini-tag">Roblox Studio</span>
+                                <span class="mini-tag">UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-    <footer id="contact" class="bg-light py-5 border-top">
+    <footer id="contact" class="bg-light py-5 border-top" style="padding-bottom: 300px !important;">
         <div class="container text-center">
             <h3>Thanks for stopping by!</h3>
             <p class="text-muted">Feel free to reach out if you'd like to collaborate or just chat about code.</p>
