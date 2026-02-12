@@ -97,3 +97,25 @@ header {
     /* This adds the large blank space at the bottom you requested */
     padding-bottom: 40vh !important;
 }
+
+/* Add this to your existing styles.css */
+
+.bg-light.rounded {
+    background-color: #f1f3f5 !important;
+}
+
+.border-primary {
+    border-color: #0d6efd !important;
+}
+
+#story {
+    min-height: 70vh;
+    /* Takes up 70% of the screen height */
+    display: flex;
+    align-items: center;
+    /* Centers the content vertically */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ffffff;
+    /* Slight contrast from the fcfcfc body */
+}
