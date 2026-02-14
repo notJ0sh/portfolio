@@ -153,3 +153,22 @@ header {
     background-color: #ffffff;
     /* Slight contrast from the fcfcfc body */
 }
+
+/* Custom Carousel Styling */
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    /* Makes the clickable area smaller and cleaner */
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+    /* Helps white arrows show up on light images */
+}
+
+/* Ensure the carousel fits perfectly in the card without extra gaps */
+.carousel-inner {
+    border-radius: 0;
+    /* Keep it flush with the card's edge */
+}
