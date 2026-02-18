@@ -167,8 +167,41 @@ header {
     /* Helps white arrows show up on light images */
 }
 
-/* Ensure the carousel fits perfectly in the card without extra gaps */
+/* Fix: Remove fixed heights that cause gaps */
+#projects .project-card-full img,
+#projects .project-card-full .object-fit-cover {
+    height: 100% !important; /* Let the container dictate height */
+    width: 100%;
+    object-fit: cover; 
+}
+
+/* Ensure the text side matches the image side exactly */
+.project-card-full .row.g-0 {
+    display: flex;
+    align-items: stretch; /* This forces both columns to be equal height */
+}
+
+/* Standard Project Aspect Ratio */
 .carousel-inner {
-    border-radius: 0;
-    /* Keep it flush with the card's edge */
+    aspect-ratio: 16 / 9;
+    height: 100%;
+}
+
+/* --- THE HIGHLIGHT (ROBLOX) PROJECT --- */
+.project-highlight {
+    border: 2px solid #0d6efd !important;
+    box-shadow: 0 15px 30px rgba(13, 110, 253, 0.15) !important;
+}
+
+/* Making the Roblox media container much taller/larger */
+.project-highlight .carousel-inner {
+    aspect-ratio: 21 / 9; /* Cinematic wide/tall look */
+}
+
+/* Adjusting padding so text doesn't look cramped in the larger div */
+.project-card-full .p-4 {
+    padding: 2.5rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
